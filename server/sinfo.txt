@@ -1,0 +1,147 @@
+ts2025010,siddhartha,9701048659,Hyderabadts2025011,rahul,9876543210,Hyderabad9876543210,siddhu
+9876543210,siddhu
+9876543210,siddhu,siddhu@gmail.com
+9876543210,siddhu,siddhu@gmail.com,2025-06-19
+9876543210,siddhu,siddhu@gmail.com,2025-06-19
+7671847112,siddhu,siddhu@gmail.com,2025-06-25,2nd class
+7671847112,siddhu,siddhu@gmail.com,2025-06-25,2nd class
+7671847112,siddhu,siddhu@gmail.com,2025-06-25,General,C:\fakepath\images.png
+,7671847112,siddhu,siddhu@gmail.com,2025-06-25,General,C:\fakepath\images.png
+,7671847112,siddhu,siddhu@gmail.com,2025-06-25,2nd class,C:\fakepath\images.png
+,7671847112,siddhu,siddhu@gmail.com,2025-06-25,2nd class,C:\fakepath\images.png
+,7671847112,siddhu,siddhu@gmail.com,2025-06-25,1st class,C:\fakepath\images.png
+AGRA,siddhu,7671847112,siddhu@gmail.com,2025-06-25,2nd class,C:\fakepath\images.png
+AGRA,siddhu,7671847112,siddhu@gmail.com,2025-06-25,2nd class,C:\fakepath\luffy-red-glow-eyes-dark-pc-wallpaper-preview.jpg
+JAIPUR,siddhu,7671847112,siddhu@gmail.com,2025-06-25,1st class,C:\fakepath\images.png
+AGRA,siddhu,7671847112,siddhu@gmail.com,2025-06-04,1st class,C:\fakepath\images.png
+
+
+
+
+
+
+
+
+const mysql = require('mysql');
+
+const conn = mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'kitsw'
+
+});
+
+const sql="create table employee(empid varchar(10),empname varchar(20))";
+conn.query(sql,(err,result)=>{
+    if(err)
+    {
+        console.log("failed to execute"+err);
+        return;
+    }
+    console.log('recorded')
+})
+
+
+
+
+
+
+
+
+
+const mysql = require('mysql');
+
+const conn = mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'kitsw'
+
+});
+
+data1=[
+    ['107','sravan'],
+    ['102','yeshwanth'],
+    ['104','mani'],
+    ['105','shiva'],
+    ['106','nani'],
+]
+
+const sql="insert into employee values ?";
+conn.query(sql,[data1],(err,result)=>{
+    if(err)
+    {
+        console.log("failed to execute"+err);
+        return;
+    }
+    console.log('recorded');
+})
+
+
+
+
+
+
+
+
+const mysql = require('mysql');
+
+const conn = mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'kitsw'
+
+});
+
+data1=[
+    {id:'107',name:'praneeth'},
+    {id:'108',name:'rahul'},
+]
+
+dataA =data1.map(rec => [rec.id,rec.name])
+
+const sql="insert into employee values ?";
+conn.query(sql,[dataA],(err,result)=>{
+    if(err)
+    {
+        console.log("failed to execute"+err);
+        return;
+    }
+    console.log('recorded');
+})
+
+
+
+
+
+const mysql = require('mysql');
+
+const conn = mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'kitsw'
+
+});
+
+// data1=[
+//     {id:'107',name:'praneeth'},
+//     {id:'108',name:'rahul'},
+// ]
+
+// dataA =data1.map(rec => [rec.id,rec.name])
+
+const sql="select * from employee;";
+// conn.query(sql,[dataA],(err,result)=>{
+    conn.query(sql,(err,result)=>{
+    if(err)
+    {
+        console.log("failed to execute"+err);
+        return;
+    }
+    // console.log('recorded');
+    console.log(result);
+
+})

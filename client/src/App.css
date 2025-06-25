@@ -1,0 +1,338 @@
+.fx{
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+.ras{
+  background-color: rgb(27, 192, 118);
+  font-size: 15px;
+}
+.rat{
+  display: flex;
+  background-color:red;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+.rat >div:hover{
+  background-color: red;
+  font-size: 30px;
+  border-collapse: collapse;
+
+}
+.rad{
+  display: flex;
+  background-color: aquamarine;
+  justify-content: center;
+  color: rgb(17, 0, 255);
+  padding: 5px;
+  flex-direction: row;
+}
+.rad > div{
+  padding: 5px;
+}
+.rad >div:hover{
+  padding: 1px;
+  background-color: chocolate;
+  font-size: 20px;
+  border: 3px solid;
+}
+.sub{
+  display: none;
+}
+.menu-item:hover .sub{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: brown ;
+}
+.sub{
+  padding: 10px;
+}
+@media (min-width:600px) {
+  .rad > div{
+    padding: 10px;
+    flex-direction: column;
+  }
+  .ras{
+    flex-direction:row;
+  }
+  .rat{
+    flex-direction: row;
+  }
+  
+} 
+.d{
+
+  text-align: center;
+  align-content: center; 
+  color: rgb(0, 0, 0);
+  padding-right: 70px;
+  font-size: 20px;
+  flex-direction: row;
+}
+
+.Link{
+  text-decoration: none;
+  color: black;
+}
+.menu-item{
+  padding: 10px;
+}
+.subitems{
+  display: none;
+  color: black;
+}
+.menu-item:hover .subitems{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background:linear-gradient(180deg,green,royalblue);
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+.subitems>div{
+  padding: 10px;
+
+}
+*{
+  align-items:center;
+}
+.menu{
+  align-items: center;
+  display: flex;
+  background-color: pink;
+  color: rgb(0, 0, 0);
+  padding-right: 70px;
+  font-size: 20px;
+  flex-direction: row;
+}
+.menu >div{
+  padding-right: 150px;
+}
+.menu>div:hover{
+  padding-right: 200px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+  border: solid 1px;
+  background:linear-gradient(180deg,tomato,royalblue);
+  border: 2px solid;
+  border-radius: 20px;
+}
+@media(max-width:600px){
+  .menu{
+    display: flex;
+    background-color: green;
+    color: wheat;
+    padding: 100px;
+    flex-direction: column;
+  }
+}
+.he{
+  display: flex;
+  align-items: center;
+  background:linear-gradient(90deg,tomato ,blue,rgb(131, 126, 126));
+  color: white;
+  padding: 10px;
+}
+.he >div{
+  padding-right: 100px;
+}
+.work{
+  display: flex;
+  align-items: center;
+  background:linear-gradient(180deg,rgb(110, 19, 135) ,rgb(49, 2, 59),rgb(115, 16, 117));
+  color: white;
+  padding: 10px;
+}
+.course{
+  display: flex;
+  align-items: center;
+  background:linear-gradient(0deg,rgb(115, 234, 243), #219ebc,rgb(112, 228, 246));
+  color: white;
+  gap:24px;
+  padding: 10px;
+}
+.course>div{
+  padding:20px ;
+}
+.bd{
+  border: 2px;
+  align-items: center;
+  border-color:black;
+  border-style: solid;
+  border-radius:10px;
+}
+.last{
+  display: flex;
+  align-items: center;
+  background:linear-gradient(360deg,#D2042D,tomato,#D2042D);
+  color: white;
+  padding: 10px;
+}
+.last >div{
+  padding-right: 100px;
+}
+@media(max-width:600px){
+  .he{
+    display: flex;
+    background-color:#4169E1;
+    color: wheat;
+    padding: 100px;
+    flex-direction: column;
+  }
+}
+@media(max-width:600px){
+  .last{
+    display: flex;
+    background-color:#D2042D;
+    color: wheat;
+    padding: 100px;
+    flex-direction: column;
+  }
+}
+@media(max-width:1000px){
+  .work{
+    display: flex;
+    background-color:orange;
+    color: wheat;
+    padding: 100px;
+    flex-direction: column;
+  }
+}
+@media(max-width:1000px){
+  .course{
+    display: flex;
+    background-color: #219ebc;
+    color: wheat;
+    padding: 100px;
+    flex-direction: column;
+  }
+}
+
+
+.x{
+  text-align: center;
+  width: 100%;
+  font-size: 100px;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tour {
+  color: rgb(104, 17, 122);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: row;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+                    url("https://t3.ftcdn.net/jpg/01/20/96/54/360_F_120965458_D4laIqLTBdK7pX9QFiH6n1BkM4Annreq.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*.tour >div:hover{
+  font-size: 30px;
+
+} */
+@media (min-width:600px) {
+  .tour > div{
+    padding: 10px;
+    flex-direction: column;
+  }
+} 
+
+.men-item{
+  padding: 5px;
+}
+.sbitems{
+  display: none;
+  color: rgb(250, 3, 184);
+}
+.men-item:hover .sbitems{
+  display: flex;
+  
+  flex-direction: column;
+  position: absolute;
+  background:linear-gradient(180deg,rgb(74, 113, 238),rgb(154, 36, 190));
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+.sbitems>div{
+  padding: 10px;
+
+}
+*{
+  align-items:center;
+}
+.men{
+  align-items: start;
+  display: flex;
+  background: linear-gradient(360deg,rgb(227, 171, 52),rgb(27, 186, 231));
+  color: rgb(0, 0, 0);
+  padding-right: 10px;
+  font-size: 20px;
+  flex-direction: row;
+}
+.men >div{
+  padding-right: 50px;
+}
+.men>div:hover{
+  padding-right: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+  border: solid 1px;
+  background:linear-gradient(180deg,rgb(191, 230, 48),rgb(16, 180, 101));
+  border: 2px solid;
+  border-radius: 20px;
+}
+.aa{
+
+  text-align: center;
+  align-content: center; 
+  color: rgb(0, 0, 0);
+  padding-right: 70px;
+  font-size: 20px;
+  flex-direction: column;
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                    url("https://boutindia.s3.us-east-2.amazonaws.com/images/blog/images/2023-07-21-13-58-37-64ba41b586366-Agra-The-Glimpse-of-Mughal-Kingdom.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+
+.wel{
+  color: red;
+  font-size: 25px;
+  text-align: center;
+}
+
+.wl{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.qu{
+  color: green;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  height: 0.1%;
+  padding: 0.01px;
+}
+
+@media(max-width:600px){
+  .men{
+    display: flex;
+    background-color: rgb(252, 206, 2);
+    color: wheat;
+    padding: 100px;
+    flex-direction: column;
+  }
+  .aa{
+    display: flex;
+    flex-direction: row;
+  }
+}
